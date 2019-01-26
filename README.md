@@ -10,6 +10,7 @@ Roadmap:
 3.Train it in real world data.
 4.Other approachs in paper.
 5.Test it in simulation.
-  I want the model can be used in different simulation environment. Welcome other contributors to integrate different open source or private simulators. 
+  I want the model can be used in different simulation environment.
+  Welcome other contributors to integrate different open source or private simulators. 
   I will combine my company's simulator and some simple simulators first.
 6.Test it in Real world on china's urban road.
