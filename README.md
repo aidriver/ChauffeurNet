@@ -1,4 +1,4 @@
-# ChauffeurNet
+# ChauffeurNet:
 ChauffeurNet : Learning to Drive by Imitating the Best and Synthesizing the Worst.
 Reproduction the result according to this paper[https://arxiv.org/pdf/1812.03079.pdf].
 I just implement it on the basis of my comprehension，because the paper didn't introduce the neural network in every detail.
@@ -24,5 +24,5 @@ The model is implemented by Keras with Tensorflow backend.
 # Links:
 https://github.com/Iftimie/ChauffeurNet
 
-# Install
+# Install:
 anaconda3, python 3.6, keras 2.2.4, tensorflow 1.12.0
