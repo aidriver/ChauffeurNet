@@ -1,4 +1,8 @@
+#/usr/bin/env python
+# -*- coding:utf-8 -*-
+
 import sys
+sys.path.append("../")
 from keras.layers import Input
 from keras.models import Model
 from keras.layers import Concatenate
@@ -19,7 +23,7 @@ import math
 import time
 
 from keras.utils.np_utils import to_categorical
-from keras.utils import multi_gpu_model
+#from keras.utils import multi_gpu_model
 from keras.callbacks import ReduceLROnPlateau
 
 from chauffeur_net.feature_net import FeatureNet
@@ -343,7 +347,7 @@ class ChauffeurNet:
         for k in range(0, self.N_out_steps):
             # print(k)
             # should use Lambda Layer or will wrong in iteration
-            input_k_tensor = K.ones(K.shape(input_ego_past_img)) * k
+            #input_k_tensor = K.ones(K.shape(input_ego_past_img)) * k
             # input_k = np.ones((batch_size, 1)) * k
             # input_k_tensor = tf.convert_to_tensor(input_k)
             input_agent_rnn_vec = [input_ego_past_img,  # input_k_tensor,
@@ -459,7 +463,7 @@ class ChauffeurNet:
         for k in range(0, self.N_out_steps):
             # input_k = np.ones(K.int_shape(input_ego_past_img)[0]) * k
             # input_k_tensor = tf.convert_to_tensor(input_k)
-            input_k_tensor = K.ones(K.shape(input_ego_past_img)) * k
+            #input_k_tensor = K.ones(K.shape(input_ego_past_img)) * k
             input_perception_rnn = [  # input_k_tensor,
                 input_last_predict_obs_box, features]
             model_perception_rnn_out = model_perception_rnn(input_perception_rnn)
@@ -1005,6 +1009,7 @@ if __name__ == '__main__':
 
     # Replicates `model` on 8 GPUs.
     # This assumes that your machine has 8 available GPUs.
+    '''
     print("GPU train......")
     n_gpu = 1  # 8
     parallel_model = multi_gpu_model(model, gpus=n_gpu)
@@ -1032,3 +1037,4 @@ if __name__ == '__main__':
     print("GPU predict......")
     # out = model.predict(test_inputs)
     # print(out)
+    '''

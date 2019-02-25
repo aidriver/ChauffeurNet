@@ -10,7 +10,7 @@ from keras.layers import Dense
 from keras.layers.core import Activation
 from keras.layers.core import Reshape
 from keras.layers import LeakyReLU
-from keras.layers import ReLU
+#from keras.layers import ReLU
 from keras.layers import Dropout
 from keras import backend as K
 

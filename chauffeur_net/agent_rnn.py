@@ -1,3 +1,6 @@
+#/usr/bin/env python
+# -*- coding:utf-8 -*-
+
 from keras.layers import Input
 from keras.models import Model
 from keras.layers import Conv2D
@@ -11,7 +14,7 @@ from keras.layers import Dense
 from keras.layers.core import Activation
 from keras.layers.core import Reshape
 from keras.layers import LeakyReLU
-from keras.layers import ReLU
+#from keras.layers import ReLU
 from keras.layers import Dropout
 from keras import backend as K
 import tensorflow as tf
@@ -131,7 +134,7 @@ class AgentRNN:
             fp_y = x * self.y_map
             x = K.concatenate([fp_x, fp_y], axis=-1)
             return x
-
+        ''''''
         #SpatialSoftmaxLayer = Lambda(spatial_softmax_layer)
         #out_waypoint = SpatialSoftmaxLayer(up_model_feat)
         from tensorflow.contrib.layers import spatial_softmax

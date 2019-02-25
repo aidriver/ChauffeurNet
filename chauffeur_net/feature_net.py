@@ -1,6 +1,6 @@
 # from keras.applications.inception_v3 import InceptionV3
 # from keras.applications.densenet import DenseNet121
-from keras.applications.nasnet import NASNetMobile
+#from keras.applications.nasnet import NASNetMobile
 from keras.layers import Input
 from keras.models import Model
 from keras.layers import Conv2D
