@@ -26,3 +26,7 @@ https://github.com/Iftimie/ChauffeurNet
 
 # Install:
 anaconda3, python 3.6, keras 2.2.4, tensorflow 1.12.0
+
+# Run:
+python chaffeur_net/chaffeur_net_main.py
+###rnn_cell is reserverd. we should not use it now!
